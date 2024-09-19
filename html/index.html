@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/js.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.7.2/cyborg/bulmaswatch.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <title>Main Menu</title>
+  </head>
+  <body>
+    <div id="main-menu">
+      <div id="left-panel">
+        <div id="logo">
+          <img src="img/logos/gametela.png" alt="logo" />
+        </div>
+        <div id="left-menu">
+          <div id="left-menu-main">
+            <div id="left-menu-title">
+              <span>Jeux</span>
+            </div>
+            <div class="left-menu-items">
+              <div class="left-menu-item underlined">
+                <img src="img/games/loupgarou.png" />
+                <span>Loup Garou</span>
+              </div>
+              <div class="left-menu-item">
+                <img src="img/games/loupgarou.png" />
+                <span>Loup Garou</span>
+              </div>
+              <div class="left-menu-item">
+                <img src="img/games/loupgarou.png" />
+                <span>Loup Garou</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="right-panel">
+        <div id="top-bar">
+          <div id="main-actions">
+            <div class="main-action-div underlined">
+              <span>Accueil</span>
+            </div>
+            <div class="main-action-div">
+              <span>Salons publics</span>
+              <div class="main-action"></div>
+            </div>
+            <div class="main-action-div">
+              <span>Salons privés</span>
+              <div class="main-action"></div>
+            </div>
+            <div class="main-action-div">
+              <span>Shop</span>
+              <div class="main-action"></div>
+            </div>
+          </div>
+          <div id="parameters">
+            <div id="identity">
+              <span id="identity-name">John Doe</span><br />
+              <span id="identity-id"
+                >4789-5799<i
+                  class="fa-regular fa-copy"
+                  title="Copier le code ami"
+                  onclick="copyToClipboard('4789-5799')"
+                ></i
+              ></span>
+            </div>
+            <i class="fa-solid fa-gear icon-button"></i>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <div id="main-content">
+          <div id="main-content-body"></div>
+          <div id="main-content-friends">
+            <div id="friends-search">
+              <div>
+                <i class="fa-solid fa-search"></i>
+                <input
+                  id="search-data"
+                  type="text"
+                  placeholder="Chercher un amis"
+                />
+                <i class="fa-solid fa-plus small-icon-button"></i>
+              </div>
+              <div class="spacer"></div>
+              <div id="friends-list">
+                <div class="friend">
+                  <img src="img/avatars/avatar1.jpg" />
+                  <div class="friend-details">
+                    <p class="friend-name">Chamallaw</p>
+                    <p class="friend-activity in-activity">
+                      Joue à : Loup Garou
+                    </p>
+                  </div>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+                <div class="friend">
+                  <img src="img/avatars/avatar1.jpg" />
+                  <div class="friend-details">
+                    <p class="friend-name">Jimmy</p>
+                    <p class="friend-activity">En ligne</p>
+                  </div>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+                <div class="friend">
+                  <img src="img/avatars/avatar1.jpg" />
+                  <div class="friend-details">
+                    <p class="friend-name">Tching Tchong</p>
+                    <p class="friend-activity">En ligne</p>
+                  </div>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+                <div class="friend">
+                  <img src="img/avatars/avatar1.jpg" />
+                  <div class="friend-details">
+                    <p class="friend-name">HK</p>
+                    <p class="friend-activity">En ligne</p>
+                  </div>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+                <div class="friend">
+                  <img src="img/avatars/avatar1.jpg" />
+                  <div class="friend-details">
+                    <p class="friend-name">Loic</p>
+                    <p class="friend-activity">En ligne</p>
+                  </div>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

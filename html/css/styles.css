@@ -1,0 +1,330 @@
+:root {
+  --background-color: rgb(26, 26, 26);
+  --text-color: rgb(232, 232, 232);
+  --select-text-color: rgb(36, 36, 36);
+  --text-secondary-color: rgb(171, 171, 171);
+  --select-color: rgb(27, 160, 213);
+  --in-activity-color: rgb(82, 193, 104);
+  --cancel-color: rgb(195, 56, 56);
+
+  --i-secondary-color: rgba(255, 255, 255, 0.167);
+}
+
+body {
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 200 !important;
+  font-style: normal !important;
+  user-select: none;
+}
+
+#logo {
+  width: 100%;
+  min-width: 150px;
+}
+
+#main-menu {
+  background: rgb(69, 76, 101);
+  background: radial-gradient(circle, rgb(31, 34, 47) 0%, rgb(4, 4, 6) 100%);
+  background-size: 200%;
+  color: var(--text-color);
+  width: 80vw;
+  height: 80vh;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  border-radius: 3vh;
+  padding: 15px;
+}
+
+#btn-edit-fav:hover {
+  background-color: var(--select-color);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+#left-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 40px;
+  min-width: 150px;
+}
+
+.left-menu-items {
+  overflow-y: auto;
+  height: 100%;
+}
+
+#left-panel {
+  margin-right: 20px;
+  width: 20%;
+}
+
+#left-menu-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#left-menu-title span {
+  margin-left: 10px;
+}
+
+.left-menu-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--text-secondary-color);
+  margin-top: 5px;
+  /* font-weight: bold; */
+  font-size: 13px;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+.left-menu-item:hover {
+  color: rgb(177, 177, 177);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.left-menu-item img,
+.left-menu-item-selected img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  border-radius: 12px;
+}
+
+#top-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.main-action-div {
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  height: fit-content;
+}
+
+.underlined {
+  border-bottom: 2px solid var(--select-color);
+  font-weight: 600;
+}
+
+#main-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.main-action {
+  margin-top: 10px;
+  height: 3px;
+  border-radius: 25px;
+  width: 100%;
+}
+
+#parameters {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 15px;
+}
+
+#identity {
+  margin-right: 40px;
+}
+
+#identity-id {
+  color: var(--text-secondary-color);
+}
+
+#identity-id i {
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+#identity-id i:hover {
+  color: var(--select-color);
+  cursor: pointer;
+}
+
+#identity-id i:active {
+  color: var(--text-color);
+}
+
+.icon-button {
+  background-color: var(--i-secondary-color);
+  padding: 10px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.small-icon-button {
+  background-color: var(--i-secondary-color);
+  padding: 7px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.icon-button:hover,
+.small-icon-button:hover {
+  background-color: var(--select-color);
+  cursor: pointer;
+}
+
+#parameters .fa-xmark {
+  background-color: none;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  margin-right: 5px;
+  margin-left: 0px;
+}
+
+#parameters .fa-xmark:hover {
+  background-color: var(--cancel-color);
+  cursor: pointer;
+}
+
+#right-panel {
+  width: 100%;
+}
+
+#identity-name {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 90%;
+}
+
+#main-content-body {
+  height: 100%;
+  width: 80%;
+}
+
+#main-content-friends {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 100%;
+  width: 20%;
+  margin-left: 20px;
+  min-width: 180px;
+}
+
+#search-data {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+  color: var(--text-color);
+  margin-left: 5px;
+  width: 60%;
+  margin-right: 20px;
+}
+
+.spacer {
+  margin-top: 5px;
+  width: 100%;
+  margin: auto;
+  background-color: rgb(59, 59, 59);
+  border-radius: 25px;
+  height: 1px;
+}
+
+#group {
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+#friends-search {
+  background-color: red;
+}
+
+#friends-search div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+#friends-list {
+  display: flex !important;
+  flex-direction: column !important;
+  max-height: 100%;
+  max-height: 300px; /* Hauteur maximale pour la liste d'amis */
+  overflow-y: auto; /* Activation du défilement vertical */
+}
+
+.friend {
+  width: 100%;
+  justify-content: space-between !important;
+}
+
+.friend-details {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  width: 100%;
+  align-content: start !important;
+}
+
+.friend-name {
+  width: 100%;
+  font-weight: 600;
+  margin-top: -10px !important;
+  font-size: 14px;
+  text-align: left !important;
+  margin-left: 20px;
+}
+
+.in-activity {
+  color: var(--in-activity-color) !important;
+}
+
+.friend-activity {
+  font-size: 10px;
+  color: var(--select-color);
+  margin-top: 0px !important;
+  margin-left: 20px;
+  text-overflow: ellipsis !important;
+  width: 100%;
+}
+
+.friend img {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+}
+
+.friend i {
+  margin-right: 5px;
+}
+
+.friend i:hover {
+  cursor: pointer;
+}
